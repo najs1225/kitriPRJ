@@ -10,7 +10,7 @@ public class Ex04 {
            String[] words = sentence.split(" ");
            return Flux.fromArray(words);
         })
-        .subscribe(words -> System.out.println(word))
+        .subscribe(System.out::println);
 
 
     }
